@@ -6,13 +6,13 @@
 # - 1 -> нет
 
 print('Enter the day of the week:')
-dayOfWeek = int(input())
+day_of_the_week = int(input())
 print()
 
-while dayOfWeek < 1 or dayOfWeek > 7:
+while day_of_the_week < 1 or day_of_the_week > 7:
     print('Invalid day of the week. Please, try it again: ')
-    dayOfWeek = int(input())
-if dayOfWeek == 6 or dayOfWeek == 7:
+    day_of_the_week = int(input())
+if day_of_the_week in (6, 7):
     print('This is the day off!!!')
-if dayOfWeek > 0 and dayOfWeek < 6:
+else:
     print('This is a weekday :(')
