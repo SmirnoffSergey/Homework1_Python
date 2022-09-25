@@ -16,11 +16,13 @@ while x == 0 or y == 0:
     y = float(input('Y = '))
 print()
 
-if x > 0 and y > 0:
-    print('The point is in 1st quarter.')
-if x < 0 and y > 0:
-    print('The point is in 2st quarter.')
-if x < 0 and y < 0:
-    print('The point is in 3st quarter.')
-if x > 0 and y < 0:
-    print('The point is in 4st quarter.')
+if x > 0: 
+    if y > 0: 
+        print('The point is in 1st quarter.') 
+    else: 
+        print('The point is in 4th quarter.') 
+else: 
+    if y > 0: 
+        print('The point is in 2nd quarter.') 
+    else: 
+        print('The point is in 3rd quarter.')
