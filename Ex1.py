@@ -5,7 +5,7 @@
 # - 7 -> да
 # - 1 -> нет
 
-print('Enter the day of the week: ')
+print('Enter the day of the week: )')
 dayOfWeek = int(input())
 
 while dayOfWeek < 1 or dayOfWeek > 7:
